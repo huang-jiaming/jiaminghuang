@@ -1,14 +1,19 @@
 /**
- * Travel Page — Countries and meaningful places
+ * Travel Page — Global context through pattern recognition
  * 
- * Country grid on desktop
- * Stacked list on mobile
- * Data sourced from data/travel.ts
+ * This is field research, not tourism.
+ * Pattern recognition across ecosystems.
+ * 
+ * Features:
+ * - Infinite gallery of travel images (no captions, no labels)
+ * - Country grid on desktop, stacked on mobile
  */
 
 import React from 'react';
 import Layout from '../components/Layout';
 import Section, { SectionHeader } from '../components/Section';
+import { StackedInfiniteGallery } from '../components/InfiniteGallery';
+import { travelImages } from '../data/travelGallery';
 import { 
   countries, 
   getCountriesByContinent, 
@@ -29,19 +34,39 @@ export default function Travel() {
   return (
     <Layout
       title="Travel"
-      description="Countries visited, places that shaped perspective."
+      description="Pattern recognition across ecosystems. Understanding what makes cities compound."
     >
       {/* ═══════════════════════════════════════════════════════════════════════
           Header
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="default" className={styles.header}>
         <span className={styles.label}>Travel</span>
-        <h1 className={styles.title}>Geography as Perspective</h1>
+        <h1 className={styles.title}>Pattern Recognition</h1>
         <p className={styles.subtitle}>
-          Every place teaches something. These are the ones that have shaped 
-          how I think, work, and build.
+          Understanding what makes ecosystems compound — and what makes them stall.
         </p>
+      </Section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          Infinite Gallery — Global Context
+          ═══════════════════════════════════════════════════════════════════════ */}
+      <Section variant="wide" spacing="medium" className={styles.gallerySection}>
+        <StackedInfiniteGallery images={travelImages} className={styles.travelGallery} />
         
+        <div className={styles.galleryContext}>
+          <p>
+            Travel isn't about novelty. It's about pattern recognition — understanding 
+            what makes ecosystems compound, and what makes them stall. Every city 
+            teaches the same lessons differently. The goal is to import frameworks, 
+            not aesthetics.
+          </p>
+        </div>
+      </Section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          Stats
+          ═══════════════════════════════════════════════════════════════════════ */}
+      <Section variant="default" className={styles.statsSection}>
         <div className={styles.stats}>
           <div className={styles.stat}>
             <span className={styles.statValue}>{totalCountries}</span>
@@ -107,18 +132,23 @@ export default function Travel() {
       })}
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          Philosophy
+          Philosophy — Why this matters
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.philosophy}>
-        <blockquote className={styles.quote}>
-          "Travel is not about collecting places. It's about collecting perspectives 
-          that change how you see everything else."
-        </blockquote>
-        <p className={styles.philosophyText}>
-          I travel slowly and return to places that resonate. Each location on this 
-          list taught me something about systems, culture, or myself. The map is a 
-          record of curiosity, not conquest.
-        </p>
+        <div className={styles.philosophyContent}>
+          <h3 className={styles.philosophyTitle}>Why Calgary, Why Now</h3>
+          <p className={styles.philosophyText}>
+            After years of moving through ecosystems — from Sydney to Tokyo to San Francisco — 
+            Calgary became the place to stop and build. Not because it's the most obvious choice, 
+            but because the patterns are clear: small ecosystems compound faster when someone 
+            decides to organize the room.
+          </p>
+          <p className={styles.philosophyText}>
+            The lessons from every city on this page inform what's being built here. 
+            The work isn't about importing Silicon Valley. It's about applying 
+            universal principles to a specific context.
+          </p>
+        </div>
       </Section>
     </Layout>
   );
@@ -134,5 +164,3 @@ function getFlagEmoji(countryCode: string): string {
     .map(char => 127397 + char.charCodeAt(0));
   return String.fromCodePoint(...codePoints);
 }
-
-

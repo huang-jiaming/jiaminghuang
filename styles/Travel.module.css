@@ -32,7 +32,38 @@
   font-size: var(--text-xl);
   color: var(--color-ink-light);
   max-width: 600px;
-  margin: 0 auto var(--space-10);
+  margin: 0 auto;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Gallery Section — Infinite scroll images
+   ───────────────────────────────────────────────────────────────────────────── */
+.gallerySection {
+  background: var(--color-bg-subtle);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.travelGallery {
+  margin: 0 calc(var(--space-8) * -1);
+}
+
+.galleryContext {
+  max-width: 650px;
+  margin: var(--space-10) auto 0;
+  text-align: center;
+}
+
+.galleryContext p {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.7;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Stats Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.statsSection {
+  border-bottom: 1px solid var(--color-border);
 }
 
 .stats {
@@ -156,11 +187,35 @@
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   Philosophy
+   Philosophy — Why Calgary, Why Now
    ───────────────────────────────────────────────────────────────────────────── */
 .philosophy {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.philosophyContent {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.philosophyTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
   text-align: center;
-  background: var(--color-bg-subtle);
+  margin-bottom: var(--space-6);
+}
+
+.philosophyText {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.philosophyText:last-child {
+  margin-bottom: 0;
 }
 
 .quote {
@@ -171,13 +226,6 @@
   max-width: 600px;
   margin: 0 auto var(--space-6);
   line-height: 1.4;
-}
-
-.philosophyText {
-  font-size: var(--text-base);
-  color: var(--color-ink-light);
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
