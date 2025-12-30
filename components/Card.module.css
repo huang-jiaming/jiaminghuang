@@ -1,0 +1,267 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Card Styles — Reusable for gallery, products, waitlists
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.card {
+  position: relative;
+  padding: var(--space-6);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.card.clickable {
+  cursor: pointer;
+}
+
+.card.clickable:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-bg-subtle);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Card Header
+   ───────────────────────────────────────────────────────────────────────────── */
+.header {
+  margin-bottom: var(--space-4);
+}
+
+.status {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  background: var(--color-bg-subtle);
+  color: var(--color-ink-muted);
+}
+
+.status-active {
+  background: rgba(45, 74, 62, 0.1);
+  color: var(--color-accent);
+}
+
+.status-archived {
+  background: var(--color-bg-muted);
+  color: var(--color-ink-muted);
+}
+
+.status-coming-soon {
+  background: rgba(212, 165, 116, 0.15);
+  color: var(--color-highlight);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  margin-top: var(--space-1);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Card Body
+   ───────────────────────────────────────────────────────────────────────────── */
+.description {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  letter-spacing: 0.02em;
+}
+
+.tag::before {
+  content: '#';
+  opacity: 0.5;
+}
+
+.arrow {
+  position: absolute;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  font-size: var(--text-lg);
+  color: var(--color-ink-muted);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.card.clickable:hover .arrow {
+  transform: translateX(4px);
+  color: var(--color-ink);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Featured Variant
+   ───────────────────────────────────────────────────────────────────────────── */
+.featured {
+  border-color: var(--color-accent);
+  border-width: 2px;
+}
+
+.featured .title {
+  font-size: var(--text-2xl);
+}
+
+.featuredBadge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: var(--space-1) var(--space-3);
+  margin-bottom: var(--space-3);
+  background: var(--color-accent);
+  color: #fff;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Compact Variant
+   ───────────────────────────────────────────────────────────────────────────── */
+.compact {
+  padding: var(--space-4);
+}
+
+.compact .title {
+  font-size: var(--text-lg);
+}
+
+.compact .description {
+  font-size: var(--text-sm);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Stat Card
+   ───────────────────────────────────────────────────────────────────────────── */
+.stat {
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+}
+
+.statValue {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-ink);
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+  margin-top: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statContext {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  margin-top: var(--space-2);
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Waitlist Card
+   ───────────────────────────────────────────────────────────────────────────── */
+.waitlist {
+  padding-bottom: var(--space-10);
+}
+
+.waitlistFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.launch {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  letter-spacing: 0.02em;
+}
+
+.waitlistButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.waitlistButton:hover {
+  background: var(--color-accent-light);
+  opacity: 1;
+}
+
+.waitlistStatus {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .card {
+    padding: var(--space-5);
+  }
+
+  .featured .title {
+    font-size: var(--text-xl);
+  }
+
+  .statValue {
+    font-size: var(--text-4xl);
+  }
+
+  .arrow {
+    bottom: var(--space-5);
+    right: var(--space-5);
+  }
+
+  .waitlistFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+}
+

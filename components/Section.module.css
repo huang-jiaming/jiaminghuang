@@ -1,0 +1,114 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Section Styles — Consistent rhythm and spacing
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.section {
+  width: 100%;
+}
+
+.inner {
+  margin: 0 auto;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Width Variants
+   ───────────────────────────────────────────────────────────────────────────── */
+.default .inner {
+  max-width: var(--max-width-content);
+}
+
+.narrow .inner {
+  max-width: var(--max-width-reading);
+}
+
+.wide .inner {
+  max-width: var(--max-width-wide);
+}
+
+.hero .inner {
+  max-width: var(--max-width-wide);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Spacing Variants
+   ───────────────────────────────────────────────────────────────────────────── */
+.spacing-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.spacing-small {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.spacing-medium {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+.spacing-large {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+/* Hero gets extra top padding */
+.hero.spacing-large {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-16);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Section Header
+   ───────────────────────────────────────────────────────────────────────────── */
+.header {
+  margin-bottom: var(--space-10);
+}
+
+.number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-3);
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  margin-bottom: var(--space-3);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-ink-light);
+  max-width: 600px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .inner {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .spacing-large {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .hero.spacing-large {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-12);
+  }
+
+  .title {
+    font-size: var(--text-2xl);
+  }
+}
+

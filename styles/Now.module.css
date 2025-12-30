@@ -1,0 +1,242 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Now Page Styles — Present-tense clarity
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Header
+   ───────────────────────────────────────────────────────────────────────────── */
+.header {
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--text-5xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-6);
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-ink-light);
+}
+
+.updated {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Focus Grid
+   ───────────────────────────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.focusCard {
+  padding: var(--space-6);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+}
+
+.focusTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-bottom: var(--space-3);
+}
+
+.focusDescription {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.focusLink {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.focusLink:hover {
+  opacity: 0.8;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Not Doing List
+   ───────────────────────────────────────────────────────────────────────────── */
+.notDoingList {
+  list-style: none;
+  max-width: 700px;
+}
+
+.notDoingItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.notDoingItem:last-child {
+  border-bottom: none;
+}
+
+.notDoingLabel {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.notDoingReason {
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Location Grid
+   ───────────────────────────────────────────────────────────────────────────── */
+.locationGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.locationCard {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+}
+
+.locationTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-3);
+}
+
+.locationValue {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2);
+}
+
+.locationNote {
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+}
+
+.ecosystemList {
+  list-style: none;
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+}
+
+.ecosystemList li {
+  padding: var(--space-1) 0;
+}
+
+.ecosystemList li::before {
+  content: '·';
+  margin-right: var(--space-2);
+  color: var(--color-ink-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Ask Grid
+   ───────────────────────────────────────────────────────────────────────────── */
+.askGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.askCard {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.askCard:hover {
+  border-color: var(--color-accent);
+}
+
+.askTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  margin-bottom: var(--space-3);
+}
+
+.askDescription {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.6;
+}
+
+.askCta {
+  margin-top: var(--space-10);
+  text-align: center;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .locationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--text-4xl);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .locationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .askGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

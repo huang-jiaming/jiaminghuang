@@ -1,0 +1,195 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Community Page Styles
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Header
+   ───────────────────────────────────────────────────────────────────────────── */
+.header {
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--text-5xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-6);
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-ink-light);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Looking For Grid
+   ───────────────────────────────────────────────────────────────────────────── */
+.lookingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.lookingCard {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.lookingCard:hover {
+  border-color: var(--color-accent);
+}
+
+.lookingTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-bottom: var(--space-3);
+}
+
+.lookingText {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.6;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Offer List
+   ───────────────────────────────────────────────────────────────────────────── */
+.offerList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 700px;
+}
+
+.offerItem {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.offerIcon {
+  font-size: var(--text-xl);
+  color: var(--color-accent);
+  flex-shrink: 0;
+  width: 30px;
+}
+
+.offerContent {
+  flex: 1;
+}
+
+.offerTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  margin-bottom: var(--space-2);
+}
+
+.offerText {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.6;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Community Grid
+   ───────────────────────────────────────────────────────────────────────────── */
+.communityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.communityCard {
+  padding: var(--space-5);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+}
+
+.communityName {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  margin-bottom: var(--space-1);
+}
+
+.communityRole {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+}
+
+.communityDescription {
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+  line-height: 1.5;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Connect CTA
+   ───────────────────────────────────────────────────────────────────────────── */
+.connect {
+  text-align: center;
+  background: var(--color-bg-subtle);
+}
+
+.connectContent {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.connectTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.connectText {
+  font-size: var(--text-lg);
+  color: var(--color-ink-light);
+  margin-bottom: var(--space-6);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--text-4xl);
+  }
+
+  .lookingGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .communityGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

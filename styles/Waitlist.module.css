@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Waitlist Page Styles
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Header
+   ───────────────────────────────────────────────────────────────────────────── */
+.header {
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--text-5xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-6);
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-ink-light);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Featured Wrapper
+   ───────────────────────────────────────────────────────────────────────────── */
+.featuredWrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+.featuredContext {
+  padding: var(--space-6);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+}
+
+.contextTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-bottom: var(--space-4);
+}
+
+.contextText {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.contextText:last-of-type {
+  margin-bottom: var(--space-5);
+}
+
+.contextLink {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.contextLink:hover {
+  opacity: 0.8;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Waitlist Grid
+   ───────────────────────────────────────────────────────────────────────────── */
+.waitlistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Philosophy
+   ───────────────────────────────────────────────────────────────────────────── */
+.philosophy {
+  background: var(--color-bg-subtle);
+}
+
+.philosophyContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophyTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-5);
+}
+
+.philosophyText {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.philosophyText:last-child {
+  margin-bottom: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .featuredWrapper {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--text-4xl);
+  }
+
+  .waitlistGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

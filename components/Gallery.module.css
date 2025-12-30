@@ -1,0 +1,126 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Gallery Styles — Infinite vertical exploration
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Column Layout (Masonry-like)
+   ───────────────────────────────────────────────────────────────────────────── */
+.gallery {
+  display: flex;
+  gap: var(--space-6);
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  flex: 1;
+}
+
+.columns-2 .column {
+  width: calc(50% - var(--space-3));
+}
+
+.columns-3 .column {
+  width: calc(33.333% - var(--space-4));
+}
+
+.item {
+  opacity: 0;
+  animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Grid Layout (Flat)
+   ───────────────────────────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.gridItem {
+  opacity: 0;
+  animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+}
+
+.gridItemFeatured {
+  grid-column: span 2;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .gallery {
+    gap: var(--space-5);
+  }
+
+  .column {
+    gap: var(--space-5);
+  }
+
+  .columns-3 .column:nth-child(3) {
+    display: none;
+  }
+
+  .columns-3 {
+    /* Redistribute to 2 columns on tablet */
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+
+  .gridItemFeatured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .column {
+    width: 100%;
+    gap: var(--space-4);
+  }
+
+  .columns-2 .column,
+  .columns-3 .column {
+    width: 100%;
+  }
+
+  /* Show all columns stacked on mobile */
+  .columns-3 .column:nth-child(3) {
+    display: flex;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .gridItemFeatured {
+    grid-column: span 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Animation
+   ───────────────────────────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
