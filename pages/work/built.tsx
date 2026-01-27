@@ -17,21 +17,22 @@ import styles from '../../styles/Work.module.css';
    ───────────────────────────────────────────────────────────────────────────── */
 const activeProducts = [
   {
-    id: 'applauncher-v2',
-    title: 'AppLauncher v2',
-    subtitle: 'Understanding before execution',
-    description: 'The evolution from code generation to clarity. A tool that helps founders and teams understand their intent deeply before taking action. Currently in early access.',
+    id: 'diaminate',
+    title: 'Diaminate',
+    subtitle: 'Event Intelligence for sponsor ROI',
+    description: 'Co-founder & CPO. We track the full loop—meetings → outcomes → follow-ups—so sponsors and organizers can measure what actually happened at events. Currently in pilot.',
     link: '/applauncher',
-    tags: ['product', 'clarity', 'intent'],
+    tags: ['product', 'events', 'sponsor-roi'],
     year: '2024–present',
     status: 'active' as const,
   },
   {
-    id: 'intent-framework',
-    title: 'Intent Framework',
-    subtitle: 'A methodology for clarity',
-    description: 'A structured approach to decomposing complex goals into clear, actionable intent units. Used internally and shared with early collaborators.',
-    tags: ['methodology', 'frameworks'],
+    id: 'cursor-meetups',
+    title: 'Cursor Meetups',
+    subtitle: 'Calgary + Toronto',
+    description: 'Organizing Cursor community events to bring builders together. These events serve as high-signal testbeds for measuring sponsor outcomes with Diaminate.',
+    link: '/community',
+    tags: ['community', 'events', 'cursor'],
     year: '2024–present',
     status: 'active' as const,
   },
@@ -39,7 +40,7 @@ const activeProducts = [
     id: 'personal-os',
     title: 'Personal Operating System',
     subtitle: 'This website',
-    description: 'A manifesto-driven personal website built as a living system. Statically generated, desktop-first, and designed for calm exploration.',
+    description: 'A personal website built as a living system. Statically generated, desktop-first, and designed for clarity.',
     link: '/',
     tags: ['web', 'design-system'],
     year: '2024–present',
@@ -49,13 +50,13 @@ const activeProducts = [
 
 const archivedProducts = [
   {
-    id: 'applauncher-v1',
-    title: 'AppLauncher v1',
-    subtitle: 'Code generation tool',
-    whatItWas: 'An AI-powered code generation tool that could scaffold entire applications from descriptions. Used by developers to accelerate prototyping.',
-    whyItMattered: 'Proved that code generation was possible but revealed a deeper truth: the hard part isn\'t generating code—it\'s knowing what to generate. This insight led to v2.',
-    tags: ['code-generation', 'automation', 'ai'],
-    year: '2023',
+    id: 'applauncher',
+    title: 'AppLauncher',
+    subtitle: 'Code generation & clarity tools',
+    whatItWas: 'An AI-powered code generation tool (v1) that evolved into a clarity-first understanding tool (v2). Helped founders articulate intent before building.',
+    whyItMattered: 'Taught the importance of upstream thinking—understanding before execution. Many insights now inform how Diaminate approaches event measurement.',
+    tags: ['code-generation', 'clarity', 'ai'],
+    year: '2023–2024',
     status: 'archived' as const,
   },
   {
@@ -63,7 +64,7 @@ const archivedProducts = [
     title: 'Async Protocols',
     subtitle: 'Remote team experiments',
     whatItWas: 'A collection of async-first communication patterns for distributed teams. Tested with several remote-first companies.',
-    whyItMattered: 'Showed that clarity in written communication reduces meeting overhead by 60%+. Many patterns now inform how I think about intent-first interfaces.',
+    whyItMattered: 'Showed that clarity in written communication reduces meeting overhead significantly. Patterns now inform how we think about event follow-ups.',
     tags: ['remote-work', 'communication'],
     year: '2022–2023',
     status: 'archived' as const,
@@ -73,7 +74,7 @@ const archivedProducts = [
     title: 'Fintech Experiments',
     subtitle: 'Payment and banking tools',
     whatItWas: 'A series of tools for cross-border payments and personal finance management, built during a consulting engagement.',
-    whyItMattered: 'Learned the importance of regulatory clarity and how complex systems can be made understandable through good interface design.',
+    whyItMattered: 'Learned the importance of measurement and how complex systems can be made understandable through good interface design.',
     tags: ['fintech', 'consulting'],
     year: '2021–2022',
     status: 'archived' as const,
@@ -134,7 +135,7 @@ export default function Built() {
               link={product.link}
               tags={product.tags}
               status={product.status}
-              featured={product.id === 'applauncher-v2'}
+              featured={product.id === 'diaminate'}
             />
           ))}
         </div>

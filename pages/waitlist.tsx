@@ -19,29 +19,29 @@ export default function Waitlist() {
   return (
     <Layout
       title="Waitlist"
-      description="Join early access for upcoming products and experiments."
+      description="Pilot Diaminate, sponsor a Cursor meetup, or join the event organizer network."
     >
       {/* ═══════════════════════════════════════════════════════════════════════
           Header
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.header}>
-        <span className={styles.label}>Waitlist</span>
-        <h1 className={styles.title}>Early Access</h1>
+        <span className={styles.label}>Get Involved</span>
+        <h1 className={styles.title}>Work with Us</h1>
         <p className={styles.subtitle}>
-          Join the early circle for upcoming products. Get first access, 
-          shape development, and be part of the founding community.
+          Pilot Diaminate at your events. Sponsor a Cursor meetup. 
+          Join the network of organizers proving sponsor ROI.
         </p>
       </Section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          Featured — AppLauncher v2
+          Featured — Diaminate
           ═══════════════════════════════════════════════════════════════════════ */}
       {featuredWaitlist && (
         <Section variant="default" className={styles.section}>
           <SectionHeader 
             number="01"
             title="Featured"
-            subtitle="The flagship product currently in early access."
+            subtitle="The flagship product currently in pilot."
           />
           
           <div className={styles.featuredWrapper}>
@@ -56,19 +56,18 @@ export default function Waitlist() {
             />
             
             <div className={styles.featuredContext}>
-              <h3 className={styles.contextTitle}>Why AppLauncher v2?</h3>
+              <h3 className={styles.contextTitle}>Why Diaminate?</h3>
               <p className={styles.contextText}>
-                The first version of AppLauncher was a code generation tool. It worked, 
-                but we learned that the hard part isn't generating code — it's knowing 
-                what to generate.
+                Sponsors write checks and hope for leads. Organizers promise exposure 
+                but can't prove value. Everyone operates on vibes.
               </p>
               <p className={styles.contextText}>
-                v2 is a fundamental shift: from execution to understanding. It helps 
-                you clarify your intent before any code is written. Think of it as a 
-                thinking partner that ensures you're building the right thing.
+                Diaminate tracks the full loop—meetings → outcomes → follow-ups—so 
+                sponsors and organizers can measure what actually happened. Real data, 
+                not guesswork.
               </p>
               <a href="/applauncher" className={styles.contextLink}>
-                Learn more about AppLauncher v2 →
+                Learn more about Diaminate →
               </a>
             </div>
           </div>
@@ -105,15 +104,15 @@ export default function Waitlist() {
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.philosophy}>
         <div className={styles.philosophyContent}>
-          <h3 className={styles.philosophyTitle}>Why Waitlists?</h3>
+          <h3 className={styles.philosophyTitle}>Why Pilots?</h3>
           <p className={styles.philosophyText}>
-            I build products slowly and deliberately. Waitlists let me work with 
-            a small group of early users who care deeply about the problem. This 
-            isn't about hype — it's about building with feedback from day one.
+            We build with partners, not for them. Pilots let us deploy Diaminate 
+            at real events, measure real outcomes, and build real case studies 
+            together. Early partners get hands-on support and help shape the product.
           </p>
           <p className={styles.philosophyText}>
-            If you join a waitlist, expect direct communication, early access, 
-            and the opportunity to shape what gets built. Your input matters.
+            If you run events or sponsor them, and you're tired of guessing what 
+            worked, let's talk. We'll prove ROI together.
           </p>
         </div>
       </Section>

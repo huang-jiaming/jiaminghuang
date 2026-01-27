@@ -17,17 +17,17 @@ export default function Contact() {
   return (
     <Layout
       title="Contact"
-      description="Get in touch — structured paths for different types of conversations."
+      description="Work with us — pilot Diaminate, sponsor a meetup, or partner on something new."
     >
       {/* ═══════════════════════════════════════════════════════════════════════
           Header
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.header}>
         <span className={styles.label}>Contact</span>
-        <h1 className={styles.title}>Let's Talk</h1>
+        <h1 className={styles.title}>Work with Us</h1>
         <p className={styles.subtitle}>
-          I respond to every thoughtful message. Please be specific about 
-          what you're looking for — it helps me give you a better response.
+          Pilot Diaminate. Sponsor a meetup. Partner on something new. 
+          Be specific about what you're looking for.
         </p>
       </Section>
 
@@ -43,70 +43,70 @@ export default function Contact() {
         
         <div className={styles.pathGrid}>
           <div className={styles.pathCard}>
-            <div className={styles.pathIcon}>🎤</div>
-            <h3 className={styles.pathTitle}>Community Organizers</h3>
+            <div className={styles.pathIcon}>📊</div>
+            <h3 className={styles.pathTitle}>Pilot Diaminate</h3>
             <p className={styles.pathDescription}>
-              Interested in having me speak, run a workshop, or participate in 
-              your community event. Currently selective but open to the right fit.
+              Event organizers and sponsors who want to measure sponsor ROI 
+              properly. We'll deploy, track, and build case studies together.
             </p>
             <ul className={styles.pathExpectations}>
-              <li>Topic alignment with clarity/intent themes</li>
-              <li>2-4 weeks advance notice preferred</li>
-              <li>Virtual or select in-person events</li>
+              <li>Events with sponsors to measure</li>
+              <li>Willingness to share learnings</li>
+              <li>Hands-on support from us</li>
             </ul>
-            <a href="mailto:hello@jiaminghuang.com?subject=Community%20Event" className={styles.pathLink}>
-              Email about events →
+            <a href="mailto:hello@jiaminghuang.com?subject=Diaminate%20Pilot" className={styles.pathLink}>
+              Email about piloting →
             </a>
           </div>
 
           <div className={styles.pathCard}>
             <div className={styles.pathIcon}>💼</div>
-            <h3 className={styles.pathTitle}>Sponsors & Partners</h3>
+            <h3 className={styles.pathTitle}>Sponsor a Meetup</h3>
             <p className={styles.pathDescription}>
-              Exploring sponsorship, partnership, or investment opportunities 
-              related to AppLauncher or other projects.
+              Sponsor Cursor meetups in Calgary or Toronto. Builder-heavy rooms, 
+              real conversations, and measured outcomes using Diaminate.
             </p>
             <ul className={styles.pathExpectations}>
-              <li>Clear value alignment</li>
-              <li>Long-term orientation over quick deals</li>
-              <li>Transparency about expectations</li>
+              <li>Developer tools, AI products, or adjacent</li>
+              <li>Post-event report on engagement</li>
+              <li>Real conversations, not just logo placement</li>
             </ul>
-            <a href="mailto:hello@jiaminghuang.com?subject=Partnership" className={styles.pathLink}>
-              Email about partnerships →
+            <a href="mailto:hello@jiaminghuang.com?subject=Meetup%20Sponsorship" className={styles.pathLink}>
+              Email about sponsoring →
             </a>
           </div>
 
           <div className={styles.pathCard}>
             <div className={styles.pathIcon}>🚀</div>
-            <h3 className={styles.pathTitle}>Founders</h3>
+            <h3 className={styles.pathTitle}>Event Organizers</h3>
             <p className={styles.pathDescription}>
-              Fellow founders looking for feedback, advice, or just a conversation 
-              about the building journey. Especially interested in clarity-related problems.
+              Fellow event organizers who care about proving sponsor value. 
+              Let's share learnings and explore how Diaminate can help.
             </p>
             <ul className={styles.pathExpectations}>
-              <li>Specific questions get better answers</li>
-              <li>Happy to share learnings both ways</li>
-              <li>Async preferred, sync when needed</li>
+              <li>Running recurring events</li>
+              <li>Sponsors asking hard questions about ROI</li>
+              <li>Open to new measurement approaches</li>
             </ul>
-            <a href="mailto:hello@jiaminghuang.com?subject=Founder%20Chat" className={styles.pathLink}>
+            <a href="mailto:hello@jiaminghuang.com?subject=Event%20Organizer" className={styles.pathLink}>
               Email to connect →
             </a>
           </div>
 
           <div className={styles.pathCard}>
             <div className={styles.pathIcon}>🤝</div>
-            <h3 className={styles.pathTitle}>Collaborators</h3>
+            <h3 className={styles.pathTitle}>Partners</h3>
             <p className={styles.pathDescription}>
-              Interested in collaborating on research, writing, or building 
-              something together. Especially open to adjacent builders.
+              Strategic partnerships, integrations, or distribution opportunities 
+              related to Diaminate or the Cursor meetups.
             </p>
             <ul className={styles.pathExpectations}>
-              <li>Clear project or collaboration idea</li>
-              <li>Complementary skills or perspectives</li>
-              <li>Async-first work style</li>
+              <li>Clear value alignment</li>
+              <li>Long-term orientation</li>
+              <li>Complementary reach or capabilities</li>
             </ul>
-            <a href="mailto:hello@jiaminghuang.com?subject=Collaboration" className={styles.pathLink}>
-              Email about collaborating →
+            <a href="mailto:hello@jiaminghuang.com?subject=Partnership" className={styles.pathLink}>
+              Email about partnering →
             </a>
           </div>
         </div>

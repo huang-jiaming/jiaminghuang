@@ -136,17 +136,18 @@ export default function Travel() {
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.philosophy}>
         <div className={styles.philosophyContent}>
-          <h3 className={styles.philosophyTitle}>Why Calgary, Why Now</h3>
+          <h3 className={styles.philosophyTitle}>Why Calgary + Toronto</h3>
           <p className={styles.philosophyText}>
             After years of moving through ecosystems — from Sydney to Tokyo to San Francisco — 
-            Calgary became the place to stop and build. Not because it's the most obvious choice, 
-            but because the patterns are clear: small ecosystems compound faster when someone 
-            decides to organize the room.
+            Calgary and Toronto became the places to build. Not because they're the most obvious 
+            choices, but because the patterns are clear: ecosystems compound faster when someone 
+            decides to organize the room and measure what works.
           </p>
           <p className={styles.philosophyText}>
-            The lessons from every city on this page inform what's being built here. 
-            The work isn't about importing Silicon Valley. It's about applying 
-            universal principles to a specific context.
+            The lessons from every city on this page inform what's being built at Diaminate 
+            and through the Cursor meetups. The work isn't about importing Silicon Valley. 
+            It's about applying universal principles to specific contexts—and proving ROI 
+            for sponsors along the way.
           </p>
         </div>
       </Section>

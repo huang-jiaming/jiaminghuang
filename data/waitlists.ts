@@ -18,58 +18,50 @@ export interface Waitlist {
 
 export const waitlists: Waitlist[] = [
   // ═══════════════════════════════════════════════════════════════════════════
-  // PRIMARY — AppLauncher v2
+  // PRIMARY — Diaminate
   // ═══════════════════════════════════════════════════════════════════════════
   {
-    id: 'applauncher-v2',
-    name: 'AppLauncher v2',
-    tagline: 'Understanding before execution',
-    description: 'The next evolution of AppLauncher. Moving from code generation to clarity — helping founders and teams understand their intent deeply before taking action. Join the early circle shaping how we think about building in a post-AI world.',
+    id: 'diaminate',
+    name: 'Diaminate',
+    tagline: 'Event Intelligence that proves ROI',
+    description: 'We track the full loop—meetings → outcomes → follow-ups—so sponsors and organizers can measure what actually happened at events. Join the pilot to prove sponsor ROI at your events.',
     status: 'active',
     featured: true,
-    formUrl: 'https://forms.gle/jZF2GacPQSnQXYNK6',
-    expectedLaunch: 'Q1 2025',
+    formUrl: '/contact',
+    expectedLaunch: 'Pilot now',
     category: 'product',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
-  // SECONDARY — Other experiments
+  // SECONDARY — Other opportunities
   // ═══════════════════════════════════════════════════════════════════════════
   {
-    id: 'intent-framework',
-    name: 'Intent Framework',
-    tagline: 'A vocabulary for clarity',
-    description: 'A structured methodology for decomposing complex goals into clear, actionable intent units. For teams tired of miscommunication and founders who want to think more clearly.',
-    status: 'coming-soon',
-    expectedLaunch: 'Q2 2025',
-    category: 'product',
-  },
-  {
-    id: 'clarity-circle',
-    name: 'Clarity Circle',
-    tagline: 'A community of deliberate builders',
-    description: 'A small, curated community of founders and builders who value clarity over speed. Monthly discussions on intent, execution, and the craft of building meaningful things.',
-    status: 'coming-soon',
-    expectedLaunch: 'Q2 2025',
+    id: 'cursor-meetup-sponsor',
+    name: 'Cursor Meetup Sponsorship',
+    tagline: 'Sponsor a builder-heavy room',
+    description: 'Sponsor Cursor meetups in Calgary or Toronto. High-signal audience, real conversations, and measured outcomes using Diaminate. We track what works.',
+    status: 'active',
+    formUrl: '/contact',
+    expectedLaunch: 'Ongoing',
     category: 'community',
   },
   {
-    id: 'async-protocols',
-    name: 'Async Protocols',
-    tagline: 'Coordination without meetings',
-    description: 'A collection of async-first communication patterns for remote teams. Reduce meeting overhead while improving alignment and clarity.',
+    id: 'event-organizer-network',
+    name: 'Event Organizer Network',
+    tagline: 'Share learnings on sponsor ROI',
+    description: 'A network of event organizers who care about proving sponsor value. Share learnings, explore Diaminate together, and build better events.',
     status: 'coming-soon',
-    expectedLaunch: 'Q3 2025',
-    category: 'experiment',
+    expectedLaunch: 'Q2 2026',
+    category: 'community',
   },
   {
-    id: 'post-verbal-research',
-    name: 'Post-Verbal Research',
-    tagline: 'Exploring intent-based interaction',
-    description: 'Early research into how humans and AI can collaborate through intent rather than language. For researchers and practitioners interested in the future of human-computer interaction.',
+    id: 'sponsor-intelligence-reports',
+    name: 'Sponsor Intelligence Reports',
+    tagline: 'Benchmarks and insights',
+    description: 'Aggregate insights from Diaminate deployments. What works at events? What converts? What follow-up patterns drive ROI? Data-driven guidance for sponsors.',
     status: 'coming-soon',
-    expectedLaunch: 'TBD',
-    category: 'experiment',
+    expectedLaunch: 'Q3 2026',
+    category: 'product',
   },
 ];
 

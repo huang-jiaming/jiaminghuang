@@ -22,11 +22,11 @@ interface LayoutProps {
 
 export default function Layout({
   children,
-  title = 'Jia Ming Huang',
-  description = 'Building systems for the post-verbal world. Intent → clarity → action.',
+  title = 'Jia Ming Huang — Co-founder & CPO @ Diaminate',
+  description = 'Co-founder & CPO at Diaminate. Turning events into measurable sponsor ROI with meeting + outcomes intelligence. Organizer of Cursor meetups Calgary/Toronto.',
   className = '',
 }: LayoutProps) {
-  const fullTitle = title === 'Jia Ming Huang' ? title : `${title} — Jia Ming Huang`;
+  const fullTitle = title === 'Jia Ming Huang — Co-founder & CPO @ Diaminate' ? title : `${title} — Jia Ming Huang`;
 
   return (
     <>
@@ -62,7 +62,7 @@ export default function Layout({
             <div className={styles.footerLeft}>
               <span className={styles.footerName}>Jia Ming Huang</span>
               <span className={styles.footerDivider}>·</span>
-              <span className={styles.footerTagline}>Building for clarity</span>
+              <span className={styles.footerTagline}>Co-founder & CPO @ Diaminate</span>
             </div>
             <div className={styles.footerRight}>
               <span className={styles.footerYear}>{new Date().getFullYear()}</span>

@@ -16,83 +16,88 @@ export default function Community() {
   return (
     <Layout
       title="Community"
-      description="The Fisherman's Village — what I'm looking for, what I offer, where I participate."
+      description="Cursor Meetups in Calgary and Toronto. Builder-heavy rooms where we test ideas and measure sponsor outcomes."
     >
       {/* ═══════════════════════════════════════════════════════════════════════
           Header
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.header}>
         <span className={styles.label}>Community</span>
-        <h1 className={styles.title}>Fisherman's Village</h1>
+        <h1 className={styles.title}>Cursor Meetups: Calgary + Toronto</h1>
         <p className={styles.subtitle}>
-          Building in public means building in community. This page is an 
-          open invitation to connect, collaborate, and create together.
+          I organize Cursor community events to bring builders together and create 
+          real collisions. These events also serve as high-signal testbeds for 
+          measuring sponsor outcomes.
         </p>
       </Section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          What I'm Looking For
+          The Meetups
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="default" className={styles.section}>
         <SectionHeader 
           number="01"
-          title="What I'm Looking For"
-          subtitle="The kinds of people and conversations I'm drawn to."
+          title="The Meetups"
+          subtitle="Builder-heavy rooms where we test ideas in the real world."
         />
         
         <div className={styles.lookingGrid}>
           <div className={styles.lookingCard}>
-            <h3 className={styles.lookingTitle}>Clarity Seekers</h3>
+            <h3 className={styles.lookingTitle}>Cursor Calgary</h3>
             <p className={styles.lookingText}>
-              People who believe understanding is underrated. Founders who think 
-              before they build. Writers who clarify before they publish.
+              Monthly meetups for developers, founders, and builders using 
+              AI-powered development tools. Demos, discussions, and real 
+              conversations about shipping with AI.
             </p>
           </div>
           
           <div className={styles.lookingCard}>
-            <h3 className={styles.lookingTitle}>Intent-First Builders</h3>
+            <h3 className={styles.lookingTitle}>Cursor Toronto</h3>
             <p className={styles.lookingText}>
-              Those working on tools for thought, understanding, or collaboration. 
-              Especially interested in human-AI interface explorers.
+              Same format, larger ecosystem. Bringing together Toronto's 
+              AI and developer community for high-signal conversations 
+              and genuine collisions.
             </p>
           </div>
           
           <div className={styles.lookingCard}>
-            <h3 className={styles.lookingTitle}>Async-First Teams</h3>
+            <h3 className={styles.lookingTitle}>Sponsor Testbed</h3>
             <p className={styles.lookingText}>
-              Remote teams experimenting with reducing meeting overhead through 
-              better async practices. Happy to share what I've learned.
+              These meetups double as real-world testing grounds for Diaminate. 
+              We measure what works—who engaged, what converted, what's worth 
+              funding. Sponsors get real data.
             </p>
           </div>
           
           <div className={styles.lookingCard}>
-            <h3 className={styles.lookingTitle}>Early Users</h3>
+            <h3 className={styles.lookingTitle}>Builder Network</h3>
             <p className={styles.lookingText}>
-              Founders and product people willing to try early versions of 
-              AppLauncher v2 and provide honest, critical feedback.
+              Not a passive community. Active builders shipping real products. 
+              If you're building with AI tools and want accountability, 
+              this is your room.
             </p>
           </div>
         </div>
       </Section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          What I Offer
+          For Sponsors
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="default" className={styles.section}>
         <SectionHeader 
           number="02"
-          title="What I Offer"
-          subtitle="How I can help if our interests align."
+          title="For Sponsors"
+          subtitle="What you get when you sponsor a meetup."
         />
         
         <div className={styles.offerList}>
           <div className={styles.offerItem}>
             <div className={styles.offerIcon}>→</div>
             <div className={styles.offerContent}>
-              <h4 className={styles.offerTitle}>Product Thinking</h4>
+              <h4 className={styles.offerTitle}>High-Signal Audience</h4>
               <p className={styles.offerText}>
-                Helping clarify product direction, especially for technical founders 
-                who have built something but struggle to articulate the "why."
+                Builder-heavy rooms. Developers, founders, and product people 
+                actively using AI tools to ship. Not passive attendees—active builders.
               </p>
             </div>
           </div>
@@ -100,10 +105,10 @@ export default function Community() {
           <div className={styles.offerItem}>
             <div className={styles.offerIcon}>→</div>
             <div className={styles.offerContent}>
-              <h4 className={styles.offerTitle}>Technical Architecture</h4>
+              <h4 className={styles.offerTitle}>Measured Outcomes</h4>
               <p className={styles.offerText}>
-                Reviewing system designs, especially for AI-integrated applications 
-                and developer tools. Focus on simplicity and maintainability.
+                We track sponsor ROI using Diaminate. Meetings captured, outcomes 
+                logged, follow-ups measured. You'll know exactly what happened.
               </p>
             </div>
           </div>
@@ -111,10 +116,11 @@ export default function Community() {
           <div className={styles.offerItem}>
             <div className={styles.offerIcon}>→</div>
             <div className={styles.offerContent}>
-              <h4 className={styles.offerTitle}>Async Communication Patterns</h4>
+              <h4 className={styles.offerTitle}>Real Conversations</h4>
               <p className={styles.offerText}>
-                Sharing frameworks for reducing meeting overhead and improving 
-                written communication in remote teams.
+                Not logo placement. Actual time with attendees. Demo slots, 
+                speaking opportunities, and structured networking that leads 
+                to real conversations.
               </p>
             </div>
           </div>
@@ -122,10 +128,10 @@ export default function Community() {
           <div className={styles.offerItem}>
             <div className={styles.offerIcon}>→</div>
             <div className={styles.offerContent}>
-              <h4 className={styles.offerTitle}>Introductions</h4>
+              <h4 className={styles.offerTitle}>Post-Event Report</h4>
               <p className={styles.offerText}>
-                Connecting people in my network who might benefit from knowing 
-                each other. Particularly strong in startup and AI communities.
+                After each event, you get a report: who engaged, what converted, 
+                what follow-ups are pending. Real data, not vibes.
               </p>
             </div>
           </div>
@@ -133,49 +139,49 @@ export default function Community() {
       </Section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          Communities I Participate In
+          Ecosystems
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="default" className={styles.section}>
         <SectionHeader 
           number="03"
-          title="Communities"
+          title="Ecosystems"
           subtitle="Where you might find me."
         />
         
         <div className={styles.communityGrid}>
           <div className={styles.communityCard}>
-            <h4 className={styles.communityName}>Indie Hackers</h4>
-            <p className={styles.communityRole}>Active member</p>
+            <h4 className={styles.communityName}>Cursor Community</h4>
+            <p className={styles.communityRole}>Organizer</p>
             <p className={styles.communityDescription}>
-              Sharing building progress, discussing product strategy with 
-              other solo founders and small teams.
+              Running meetups in Calgary and Toronto. Bringing builders together 
+              to share learnings and ship faster with AI tools.
+            </p>
+          </div>
+          
+          <div className={styles.communityCard}>
+            <h4 className={styles.communityName}>Event Organizers</h4>
+            <p className={styles.communityRole}>Active participant</p>
+            <p className={styles.communityDescription}>
+              Connecting with other event organizers who care about 
+              proving sponsor value. Sharing learnings on measurement.
+            </p>
+          </div>
+          
+          <div className={styles.communityCard}>
+            <h4 className={styles.communityName}>Calgary Tech</h4>
+            <p className={styles.communityRole}>Contributor</p>
+            <p className={styles.communityDescription}>
+              Building density in Calgary's startup ecosystem. 
+              Helping organize the room so it compounds faster.
             </p>
           </div>
           
           <div className={styles.communityCard}>
             <h4 className={styles.communityName}>AI Builders</h4>
-            <p className={styles.communityRole}>Contributor</p>
+            <p className={styles.communityRole}>Builder</p>
             <p className={styles.communityDescription}>
-              Exploring the frontier of AI-native applications and 
-              discussing practical implementation patterns.
-            </p>
-          </div>
-          
-          <div className={styles.communityCard}>
-            <h4 className={styles.communityName}>Remote Work Research</h4>
-            <p className={styles.communityRole}>Occasional contributor</p>
-            <p className={styles.communityDescription}>
-              Participating in discussions about async-first practices 
-              and distributed team dynamics.
-            </p>
-          </div>
-          
-          <div className={styles.communityCard}>
-            <h4 className={styles.communityName}>Tools for Thought</h4>
-            <p className={styles.communityRole}>Observer & learner</p>
-            <p className={styles.communityDescription}>
-              Following research and experiments in augmenting human 
-              cognition through software.
+              Shipping Diaminate and learning from others building 
+              AI-native products. Practical implementation over theory.
             </p>
           </div>
         </div>
@@ -186,12 +192,12 @@ export default function Community() {
           ═══════════════════════════════════════════════════════════════════════ */}
       <Section variant="narrow" className={styles.connect}>
         <div className={styles.connectContent}>
-          <h3 className={styles.connectTitle}>Let's Connect</h3>
+          <h3 className={styles.connectTitle}>Partner / Sponsor an Event</h3>
           <p className={styles.connectText}>
-            If any of this resonates, I'd love to hear from you. 
-            I respond to every thoughtful message.
+            Interested in sponsoring a Cursor meetup or partnering on an event? 
+            Let's talk about what you're looking for and how we can measure it.
           </p>
-          <a href="/contact" className="btn btn--primary">Get in Touch</a>
+          <a href="/contact" className="btn btn--primary">Get involved</a>
         </div>
       </Section>
     </Layout>

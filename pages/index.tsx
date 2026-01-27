@@ -19,8 +19,8 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <Layout
-      title="Jia Ming Huang"
-      description="Building systems for the post-verbal world. Intent → clarity → action."
+      title="Jia Ming Huang — Co-founder & CPO @ Diaminate"
+      description="Co-founder & CPO at Diaminate. Turning events into measurable sponsor ROI with meeting + outcomes intelligence. Organizer of Cursor meetups Calgary/Toronto."
     >
       {/* ═══════════════════════════════════════════════════════════════════════
           Hero / Manifesto Section
@@ -28,22 +28,29 @@ export default function Home() {
       <Section variant="hero" className={styles.hero}>
         <div className={styles.manifesto}>
           <h1 className={styles.manifestoTitle}>
-            <span className={styles.line}>Building for the</span>
-            <span className={styles.lineAccent}>post-verbal world.</span>
+            <span className={styles.line}>Proving sponsor ROI</span>
+            <span className={styles.lineAccent}>at events.</span>
           </h1>
           
           <div className={styles.manifestoBody}>
-            <p>Clarity before code.</p>
-            <p>Intent before execution.</p>
-            <p>Understanding before action.</p>
+            <p>Meetings tracked.</p>
+            <p>Outcomes measured.</p>
+            <p>Follow-ups closed.</p>
           </div>
 
           <p className={styles.manifestoContext}>
-            I design systems that help people articulate what they truly want — 
-            then make it happen. Currently building{' '}
-            <a href="/applauncher" className={styles.inlineLink}>AppLauncher v2</a>{' '}
-            and organizing builders in Calgary.
+            Co-founder & CPO at{' '}
+            <a href="/vision" className={styles.inlineLink}>Diaminate</a>. 
+            We track the full loop—meetings → outcomes → follow-ups—so sponsors 
+            and organizers can measure what actually happened. I also run{' '}
+            <a href="/community" className={styles.inlineLink}>Cursor meetups</a>{' '}
+            in Calgary and Toronto.
           </p>
+          
+          <div className={styles.closingLinks} style={{ marginTop: '2rem' }}>
+            <a href="/contact" className="btn">Work with us</a>
+            <a href="/vision" className="btn btn--ghost">See what I'm building</a>
+          </div>
         </div>
       </Section>
 
@@ -54,7 +61,7 @@ export default function Home() {
       <Section variant="wide" spacing="medium" className={styles.buildSection}>
         <div className={styles.buildHeader}>
           <h2 className={styles.buildTitle}>Build</h2>
-          <span className={styles.buildSubtitle}>Consistent execution across surfaces.</span>
+          <span className={styles.buildSubtitle}>Shipping products, convening rooms, measuring outcomes.</span>
         </div>
         
         <StackedInfiniteGallery images={buildImages} className={styles.buildGallery} />
@@ -62,9 +69,9 @@ export default function Home() {
         <div className={styles.buildContext}>
           <p>
             This isn't a highlight reel. It's the surface area of consistent execution — 
-            shipping products, convening rooms, and testing ideas in the real world. 
-            From hackathons in Calgary to demos in Tokyo, the work compounds through 
-            repetition and the density of builders you surround yourself with.
+            building event intelligence at Diaminate, running Cursor meetups in Calgary 
+            and Toronto, and testing ideas where sponsors and builders collide. The work 
+            compounds through repetition and the density of people you surround yourself with.
           </p>
         </div>
       </Section>
@@ -88,12 +95,12 @@ export default function Home() {
       <Section variant="narrow" className={styles.closing}>
         <div className={styles.closingContent}>
           <p className={styles.closingText}>
-            This site is a personal operating system and public memory — 
-            not a portfolio. It evolves as I do.
+            Interested in sponsoring an event, piloting Diaminate, or partnering 
+            on something new? Let's talk.
           </p>
           <div className={styles.closingLinks}>
-            <a href="/vision" className="btn">Read the Vision</a>
-            <a href="/contact" className="btn btn--ghost">Get in Touch</a>
+            <a href="/contact" className="btn">Work with us</a>
+            <a href="/community" className="btn btn--ghost">Sponsor a Meetup</a>
           </div>
         </div>
       </Section>

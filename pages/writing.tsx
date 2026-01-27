@@ -15,67 +15,67 @@ import styles from '../styles/Writing.module.css';
    ───────────────────────────────────────────────────────────────────────────── */
 const essays = [
   {
-    id: 'post-verbal-world',
-    title: 'The Post-Verbal World',
-    description: 'On the shift from communication to coordination, and why the future belongs to those who can express intent clearly.',
-    date: 'December 2024',
+    id: 'sponsor-roi-problem',
+    title: 'The Sponsor ROI Problem',
+    description: 'Why events are broken for sponsors, and how Event Intelligence can fix it. The thesis behind Diaminate.',
+    date: 'January 2026',
     readTime: '12 min',
-    tags: ['future', 'intent', 'ai'],
+    tags: ['events', 'sponsor-roi', 'diaminate'],
     featured: true,
   },
   {
-    id: 'clarity-as-leverage',
-    title: 'Clarity as Leverage',
-    description: 'Why the ability to articulate what you want is becoming the most valuable skill in the age of AI.',
-    date: 'November 2024',
+    id: 'measuring-what-matters',
+    title: 'Measuring What Matters at Events',
+    description: 'Beyond badge scans: how to track meetings, outcomes, and follow-ups to prove real event ROI.',
+    date: 'December 2025',
     readTime: '8 min',
-    tags: ['clarity', 'leverage'],
+    tags: ['measurement', 'events'],
     featured: true,
   },
   {
-    id: 'understanding-before-execution',
-    title: 'Understanding Before Execution',
-    description: 'The case for spending more time on intent and less time on implementation.',
-    date: 'October 2024',
+    id: 'organizing-the-room',
+    title: 'Organizing the Room',
+    description: 'Why small ecosystems compound faster when someone decides to convene and measure.',
+    date: 'November 2025',
     readTime: '10 min',
-    tags: ['product', 'process'],
+    tags: ['community', 'events'],
   },
   {
-    id: 'async-first-clarity',
-    title: 'Async-First Requires Clarity-First',
-    description: 'How remote teams can reduce meeting overhead by improving written communication.',
-    date: 'September 2024',
+    id: 'cursor-meetups-learnings',
+    title: 'What I Learned Running Cursor Meetups',
+    description: 'Lessons from organizing builder-heavy events in Calgary and Toronto.',
+    date: 'October 2025',
     readTime: '7 min',
-    tags: ['remote-work', 'async'],
+    tags: ['cursor', 'community'],
   },
   {
-    id: 'intent-as-primitive',
-    title: 'Intent as the Atomic Unit',
-    description: 'Exploring intent as the fundamental building block of human-AI collaboration.',
-    date: 'August 2024',
+    id: 'sponsor-intelligence',
+    title: 'Sponsor Intelligence: A New Category',
+    description: 'The case for systematic capture and analysis of what happens at events.',
+    date: 'September 2025',
     readTime: '15 min',
-    tags: ['intent', 'ai', 'research'],
+    tags: ['sponsor-roi', 'events', 'measurement'],
   },
 ];
 
 const notes = [
   {
-    id: 'note-frameworks',
-    title: 'On Frameworks',
-    excerpt: 'A framework is a compression of experience. Good ones disappear into practice.',
-    date: 'Dec 2024',
+    id: 'note-vibes',
+    title: 'Vibes vs. data',
+    excerpt: 'Events run on vibes. Sponsors want data. The gap is an opportunity.',
+    date: 'Jan 2026',
   },
   {
-    id: 'note-simplicity',
-    title: 'Simplicity is not reduction',
-    excerpt: 'True simplicity preserves essence while removing noise. Reduction loses both.',
-    date: 'Nov 2024',
+    id: 'note-follow-ups',
+    title: 'Follow-ups are where value lives',
+    excerpt: 'Meetings are just the start. What closes after the event is the real signal.',
+    date: 'Dec 2025',
   },
   {
-    id: 'note-clarity',
-    title: 'Clarity compounds',
-    excerpt: 'One clear thought enables many clear decisions. Invest in understanding.',
-    date: 'Oct 2024',
+    id: 'note-density',
+    title: 'Density creates collisions',
+    excerpt: 'The value of an event is proportional to the density of high-signal people in the room.',
+    date: 'Nov 2025',
   },
 ];
 
@@ -83,7 +83,7 @@ export default function Writing() {
   return (
     <Layout
       title="Writing"
-      description="Essays on clarity, intent, and the post-verbal world."
+      description="Essays on events, sponsor ROI, and building in public."
     >
       {/* ═══════════════════════════════════════════════════════════════════════
           Header
@@ -92,8 +92,8 @@ export default function Writing() {
         <span className={styles.label}>Writing</span>
         <h1 className={styles.title}>Thinking Through Writing</h1>
         <p className={styles.subtitle}>
-          Essays, notes, and fragments on clarity, intent, and building 
-          for the post-verbal world.
+          Essays, notes, and fragments on events, sponsor ROI, and 
+          building communities that compound.
         </p>
       </Section>
 

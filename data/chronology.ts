@@ -21,37 +21,38 @@ export const timeline: TimelineEntry[] = [
   // CURRENT ARC
   // ═══════════════════════════════════════════════════════════════════════════
   {
-    id: 'applauncher-v2',
+    id: 'diaminate',
     year: '2024',
-    title: 'AppLauncher v2',
-    subtitle: 'Clarity-first product development',
-    description: 'Building the next evolution of AppLauncher — moving from code generation to understanding. Focused on helping founders and teams clarify intent before execution.',
+    title: 'Diaminate',
+    subtitle: 'Co-founder & CPO',
+    description: 'Building Event Intelligence that proves sponsor ROI. We track the full loop—meetings → outcomes → follow-ups—so sponsors and organizers can measure what actually happened.',
     category: 'project',
     current: true,
-    tags: ['product', 'clarity', 'intent'],
+    tags: ['product', 'events', 'sponsor-roi'],
   },
   {
-    id: 'post-verbal-exploration',
+    id: 'cursor-meetups',
     year: '2024',
-    title: 'Post-Verbal Research',
-    subtitle: 'Intent as the atomic unit',
-    description: 'Deep dive into how coordination can happen beyond language. Exploring intent-based interfaces and collaboration patterns.',
+    title: 'Cursor Meetups',
+    subtitle: 'Organizer — Calgary + Toronto',
+    description: 'Organizing Cursor community events to bring builders together. These events serve as high-signal testbeds for measuring sponsor outcomes with Diaminate.',
     category: 'project',
     current: true,
-    tags: ['research', 'future'],
+    tags: ['community', 'events', 'cursor'],
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
   // RECENT HISTORY
   // ═══════════════════════════════════════════════════════════════════════════
   {
-    id: 'applauncher-v1',
+    id: 'applauncher',
     year: '2023',
-    title: 'AppLauncher v1',
-    subtitle: 'Code generation experiments',
-    description: 'Built the original AppLauncher as a code generation tool. Learned that the real problem isn\'t generating code—it\'s understanding what to build.',
+    endYear: '2024',
+    title: 'AppLauncher',
+    subtitle: 'Code generation & clarity tools',
+    description: 'Built AppLauncher as a code generation tool (v1) that evolved into a clarity-first understanding tool (v2). The upstream thinking lessons now inform Diaminate.',
     category: 'project',
-    tags: ['product', 'code-generation'],
+    tags: ['product', 'code-generation', 'clarity'],
   },
   {
     id: 'nomad-period',

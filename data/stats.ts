@@ -99,10 +99,17 @@ export const stats: Stat[] = [
   // COMMUNITY
   // ═══════════════════════════════════════════════════════════════════════════
   {
-    id: 'communities-joined',
-    value: 8,
-    label: 'Communities',
-    context: 'Active participation, not passive membership',
+    id: 'cursor-meetups',
+    value: 2,
+    label: 'Cities organized',
+    context: 'Cursor meetups in Calgary + Toronto',
+    category: 'community',
+  },
+  {
+    id: 'meetup-events',
+    value: '10+',
+    label: 'Events organized',
+    context: 'Builder-heavy rooms, real collisions',
     category: 'community',
   },
   {
@@ -113,10 +120,10 @@ export const stats: Stat[] = [
     category: 'community',
   },
   {
-    id: 'mentees',
-    value: 15,
-    label: 'People mentored',
-    context: 'Paying forward what was given',
+    id: 'sponsors-measured',
+    value: '5+',
+    label: 'Sponsors measured',
+    context: 'Real ROI data from Diaminate pilots',
     category: 'community',
   },
 ];
